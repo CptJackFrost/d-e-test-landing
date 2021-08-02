@@ -1,0 +1,37 @@
+<% var menu = {
+  items: ["Home", "Contact Us"],
+  links: ["index.html", "contact.html"]
+}; %>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.bundle.css" />
+
+  <title><%=title%></title>
+</head>
+
+<body>
+
+  <header class="header">
+    <nav class="navbar">
+      <a class="logo header__logo" href="#">
+        <img src="img/logo-header.svg" alt="">      
+      </a>
+      <button class="navbar-toggler" type="button"></button>
+      <div class="navbar-container" id="collapsible">
+        <ul class="navbar-items">
+          <% menu.items.forEach(function(item, key) { %>
+            <li class="navbar-item <%= item === title? 'active': '' %>">
+              <a href="<%= item === title? '#': menu.links[key] %>"><%-item%></a>
+            </li>
+            <% }); %>
+        </ul>
+      </div>
+    </nav>
+  </header>

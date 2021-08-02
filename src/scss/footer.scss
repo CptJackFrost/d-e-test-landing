@@ -1,0 +1,149 @@
+.footer {
+  position: relative;
+  color: #ffffff;
+  padding-bottom: 65px;
+
+  a {
+    color: #ffffff;
+  }
+
+  :before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 90px;
+    top: 0;
+    bottom: 0;
+    background: #316099;
+    border-radius: 0px 200px 0px 0px;
+  }
+
+  .container {
+    max-width: 1366px;
+    margin: 0;
+
+    .footer-row {
+      width: 940px;
+      margin-left: 0;
+      margin-right: auto;
+      padding-left: 213px;
+      display: flex;
+      padding-top: 90px;
+    }
+
+    .row-1 {
+      padding-bottom: 96px;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+
+      h1 {
+        margin: 0;
+        width: 320px;
+        font-size: 36px;
+        line-height: 46px;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 26px;
+        color: rgba(255, 255, 255, 0.6);
+        font-weight: 100;
+        width: 460px;
+        margin: 32px 0 0;
+      }
+
+      .column-2 {
+        height: auto;
+        display: flex;
+        align-items: center;
+        background: none;
+
+        .btn {
+          background: #5A98D0;
+
+          &:hover {
+            background: #5a99d0c5;
+          }
+        }
+      }
+    }
+
+    .row-2 {
+      justify-content: space-between;
+
+      .col-1 {
+        width: 265px;
+
+        .footer__box {
+          display: flex;
+          align-items: center;
+
+          .company-name {
+            font-weight: 200;
+            margin-left: 15px;
+            font-size: 28px;
+            line-height: 46px;
+            letter-spacing: 0.02em;
+          }
+        }
+
+        .text-rows {
+          margin-top: 9px;
+
+          .row {
+            margin-top: 24px;
+
+            .footer__elem {
+              font-weight: 200;
+              margin-right: 16px;
+            }
+          }
+        }
+      }
+
+      .col-2 {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 50px;
+
+        .title_middle {
+          display: block;
+          margin-bottom: 33px;
+          font-size: 20px;
+          line-height: 30px;
+          letter-spacing: 0.05em;
+          font-weight: 200;
+        }
+
+        ul {
+          margin-right: 77px;
+        }
+
+        li {
+          margin-bottom: 24px;
+        }
+      }
+    }
+
+    .footer__copy {
+      color: rgba(255, 255, 255, 0.4);
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: 0.05em;
+    }
+  }
+}
+
+.clients + .footer::after {
+  content: "";
+  background: #5a98d0;
+  position: absolute;
+  z-index: -2;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}

@@ -1,0 +1,50 @@
+header {
+  max-width: 1366px;
+  margin: 0 auto;
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 85px;
+    flex-wrap: wrap;
+
+    #collapsible {
+      width: 100%;
+      display: none;
+      &.expanded {
+        display: initial;
+      }
+      .navbar-items {
+        padding-top: 25px;
+        margin-top: 10px;
+        border-top: 1px solid #356EAD;
+        .navbar-item {
+          padding: 5px 0;
+          a {
+            color: #356EAD;
+            font-weight: 200;
+          }
+          &.active {
+            a {
+              opacity: 0.5;
+              pointer-events: none;
+            }
+          }
+        }
+      }
+    }
+
+    .navbar-toggler {
+      &::before {
+        content: url("/img/burger.svg");
+      }
+
+      &.expanded {
+        &::before {
+          max-width: 24px;
+          max-height: 24px;
+          content: url("/img/burger-close.svg");
+        }        
+      }
+    }
+  }
+}

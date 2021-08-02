@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="css/style.bundle.css" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a class="logo header__logo" href="#"><img src="img/logo-header.svg" alt="" /> </a
+        ><button class="navbar-toggler" type="button"></button>
+        <div class="navbar-container" id="collapsible">
+          <ul class="navbar-items">
+            <li class="navbar-item"><a href="index.html">Home</a></li>
+            <li class="navbar-item active"><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="contacts">
+      <section class="page-title">
+        <div class="container page-title__conatiner">
+          <h1 class="title">Contact Us</h1>
+          <p class="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+          </p>
+        </div>
+      </section>
+      <section class="contacts-info">
+        <div class="container">
+          <div class="grid contacts">
+            <div class="contacts__item pic"><img class="contacts__img" src="./img/soc.svg" alt="" /></div>
+            <div class="contacts__item address">
+              <span class="title title_middle contacts__title">ADDRESS</span>
+              <p class="text contacts__text">Id convallis placerat sit sed duis id amet volutpat quam a, pharetra.</p>
+            </div>
+            <div class="contacts__item phone">
+              <span class="title title_middle contacts__title">PHONE </span
+              ><a class="contacts__link" href="tel:+62-812-7313-4321"
+                ><img src="img/phone.svg" alt="" /> +62-812-7313-4321 </a
+              ><a class="text contacts__link" href="tel:+62-812-7313-4321"
+                ><img src="img/phone.svg" alt="" /> <span>+62-817-000-1234</span></a
+              >
+            </div>
+            <div class="contacts__item online">
+              <span class="title title_middle contacts__title">ONLINE SERVICE </span
+              ><a class="text contacts__link" href="www.afrianska.com"
+                ><img src="img/site.svg" alt="" /> www.afrianska.com </a
+              ><a class="text contacts__link" href="mailto:hello.afrian@gmail.com"
+                ><img src="img/mail.svg" alt="" /> www.afrianska.com</a
+              >
+            </div>
+            <div class="form card">
+              <form class="msg-form" action="#" method="POST">
+                <h1 class="title_middle form__title">SEND US MESSAGE</h1>
+                <div class="form-items">
+                  <div class="form__item col">
+                    <label for="name" class="form__label">Full Name</label>
+                    <input
+                      id="name"
+                      name="name"
+                      class="form__name form__element"
+                      form__element
+                      placeholder="Your Name"
+                      required
+                      pattern="([A-Za-zА-Яа-яЁё]*[\s]*)*"
+                    />
+                    <p class="form-info">Only letters and spaces are allowed</p>
+                  </div>
+                  <div class="form__item col">
+                    <label for="email" class="form__label">Your Email</label>
+                    <input
+                      id="email"
+                      type="email"
+                      name="email"
+                      class="form__email form__element"
+                      placeholder="Email"
+                      required
+                    />
+                    <p class="form-info">Please enter valid email address</p>
+                  </div>
+                  <div class="form__item col">
+                    <label for="message" class="form__label">Message</label>
+                    <textarea id="message" name="message" placeholder="Your Message" required minlength="20"></textarea>
+                    <p class="form-info">Field should not be empty</p>
+                  </div>
+                </div>
+                <input class="btn" type="submit" value="SUBMIT" />
+              </form>
+            </div>
+          </div>
+          <div class="row"><img class="contacts-info__map" src="./img/map.png" alt="map" /></div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-row row-1">
+          <div class="column-1">
+            <h1>Intersted to work with our team?</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam.
+            </p>
+          </div>
+          <div class="column-2"><a href="contact.html" id="contacts" class="btn footer__btn">Let’s Talk</a></div>
+        </div>
+        <div class="footer-row row-2">
+          <div class="col-1">
+            <div class="footer__box">
+              <img src="img/logo-footer.svg" alt="" /> <span class="company-name">Afrianska</span>
+            </div>
+            <div class="text-rows">
+              <div class="row">
+                <span class="text footer__elem footer__text">A.</span>
+                <span class="text footer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+              </div>
+              <div class="row">
+                <span class="text footer__elem footer__text">T.</span>
+                <a class="text footer__text link footer__link" href="tel:+62-812-7313-4321">+62-812-7313-4321</a>
+              </div>
+              <div class="row">
+                <span class="text footer__elem footer__text">E</span>
+                <a class="text footer__text link footer__link" href="mailto:hello.afrian@gmail.com"
+                  >hello.afrian@gmail.com</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <ul class="list">
+              <li><span class="title_middle footer__title">About US</span></li>
+              <li><a class="footer__text link footer__link" href="#">About</a></li>
+              <li><a class="footer__text link footer__link" href="#">What We Do</a></li>
+              <li><a class="footer__text link footer__link" href="#">Project</a></li>
+              <li><a class="footer__text link footer__link" href="#">How It Work With Us</a></li>
+            </ul>
+            <ul class="list">
+              <li><span class="title_middle footer__title">Follow US</span></li>
+              <li><a class="footer__text link footer__link" href="#">Instagram</a></li>
+              <li><a class="footer__text link footer__link" href="#">Facebook</a></li>
+              <li><a class="footer__text link footer__link" href="#">LinkedIn</a></li>
+              <li><a class="footer__text link footer__link" href="#">Youtube</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__copy footer-row">2019 © Afrianska. All rights reserved.</div>
+      </div>
+    </footer>
+  </body>
+  <script src="js/main.js"></script>
+</html>

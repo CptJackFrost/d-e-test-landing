@@ -24,10 +24,9 @@ function generateHtmlPlugins(templateDir) {
 const htmlPlugins = generateHtmlPlugins("./src/html/views");
 
 const config = {
-  //entry: ["./src/js/index.js", "./src/scss/index.scss"],
   entry: {
-    index: "./src/js/index.js",
-    //scss: "./src/scss/index.scss"
+    main: "./src/js/main.js",
+    scss: "./src/scss/main.scss"
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -95,18 +94,18 @@ const config = {
           from: "./src/fonts",
           to: "./fonts",
         },
-        {
+        /*{
           from: "./src/favicon",
           to: "./favicon",
-        },
+        },*/
         {
           from: "./src/img",
           to: "./img",
         },
-        {
+        /*{
           from: "./src/uploads",
           to: "./uploads",
-        },
+        },*/
       ],
     }),
   ].concat(htmlPlugins),
